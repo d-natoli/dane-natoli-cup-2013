@@ -1,0 +1,56 @@
+.header
+  .wrapper
+    .header-image
+      = image_tag 'cup.png'
+    .heading
+      %h1 Dane Natoli Cup 2013
+      %h2 To the victor go the spoils!
+    .header-image
+      = image_tag 'me.png'
+.intro.content.grey
+  .wrapper
+    %h2 Welcome!
+    %p
+      So its that time again. The time when your mettle is truly tested.  When you have nothing but your wits and your skills to keep you alive. When heroes are created and the rest are discarded like last week's tuna casserole.
+    %p
+      The 6th Annual Dane Natoli Cup is upon us.  You didn't think just because I was in Canada it wouldn't been happening did you? Prepare yourselves!
+    = image_tag 'jump3.jpg'
+    = image_tag 'jump1.jpg'
+    = image_tag 'jump2.jpg'
+.this-year.content
+  .wrapper
+    %h2 This Year's Competition
+    %p
+      Since this year everyone is spread all across the world, the Dane Natoli Cup challenge for 2013 must be one that is truly international.  So, as you may have gathered from the photos above (and to the delight of Foulds) I announce that this year's challenge is:
+    %h3.centre A jumping photo challenge!!!
+    %p
+      Upload your jumping photo by April 27th PST. I will then sift through the rot to find the one photo that will be claimed the best jumping photo of all! The winner will be the new owner of the Dane Natoli Cup for a whole year, the losers will be mocked and ridiculed for their pathetic attempts!
+
+.images.content.grey
+  = image_tag 'jump6.jpg'
+  = image_tag 'jump4.jpg'
+  = image_tag 'jump5.jpg'
+
+.rules.content
+  .left
+    %h2 Rules
+    %p
+      There are a few rules to this year's competition:
+      %ul
+        %li All photos must be submitted by April 27th PST
+        %li The person submitting the photo must also be in the photo.
+        %li All people in the photo must be jumping!
+        %li Only the person who submits the photo will be awarded the cup, no matter how many people are in the photo
+        %li You may submit up to 3 photos per person
+  .right
+    %h2 Think You Got What It Takes?
+    %p Then upload your photo and prepare to be judge!
+    = form_tag "#" do
+      = text_field_tag 'name', nil, :placeholder => "Name"
+      = text_field_tag 'email', nil, :placeholder => "Email"
+      = file_field_tag 'picture'
+      = link_to "Enter!", "#", :class => "button"
+.footer
+  .wrapper
+    %p
+      © 2013 Dane Natoli. All rights reserved.</p>
