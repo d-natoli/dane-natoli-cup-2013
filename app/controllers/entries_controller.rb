@@ -2,6 +2,6 @@ class EntriesController < ApplicationController
   def create
     @entry = Entry.new(params[:entry])
 
-    @entry.save
+    render 'new' unless  @entry.save
   end
 end

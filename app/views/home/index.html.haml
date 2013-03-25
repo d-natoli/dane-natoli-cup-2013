@@ -25,24 +25,4 @@
 
 .rules.content
   .wrapper
-    .left
-      %h2 Rules
-      %p
-        There are a few rules to this year's competition:
-        %ul
-          %li All photos must be submitted by April 27th PST
-          %li The person submitting the photo must also be in the photo.
-          %li All people in the photo must be jumping!
-          %li Only the person who submits the photo will be awarded the cup, no matter how many people are in the photo
-          %li You may submit up to 3 photos per person
-    .right
-      %h2 Think You Got What It Takes?
-      %p Then upload your photo and prepare to be judge!
-      = form_for @entry, :html => { :multipart => true } do |f|
-        = f.text_field :name, :placeholder => "Name"
-        = f.email_field :email, :placeholder => "Email"
-        = label_tag :file_info, "No file chosen", :class => "file-info"
-        .file-upload
-          = link_to "Select File", "#", :class => "button"
-          = f.file_field :picture
-        = submit_tag "Enter!", :class => "button"
+    = render :partial => "entries/form"

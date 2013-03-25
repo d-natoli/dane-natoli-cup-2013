@@ -1,0 +1,11 @@
+- if @entry.errors.any?
+  .content
+    .wrapper
+      .error-messages
+        %p You dufus, you didn't fill out the form correctly!
+        %ul
+          - @entry.errors.full_messages.each do |message|
+            %li= message
+.rules.content
+  .wrapper
+    = render :partial => "entries/form"

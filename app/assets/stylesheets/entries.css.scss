@@ -11,3 +11,12 @@ div.entry-text {
 div.entry-text + img {
   width:500px !important;
 }
+
+div.error-messages {
+  color: red;
+  border: red 1px solid;
+  padding: 0 15px;
+  background-color: #ffd5cd;
+  width: 400px;
+  margin: 0 auto;
+}
