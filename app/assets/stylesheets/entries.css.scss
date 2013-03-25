@@ -1,0 +1,13 @@
+// Place all the styles related to the entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.entry-text {
+  width:475px;
+  margin-right:20px;
+  float:left;
+}
+
+div.entry-text + img {
+  width:500px !important;
+}

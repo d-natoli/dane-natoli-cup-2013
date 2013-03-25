@@ -6,4 +6,17 @@
   = javascript_include_tag "application"
   = csrf_meta_tags
 %body
+  .header
+    .wrapper
+      .header-image
+        = image_tag 'cup.png'
+      .heading
+        %h1= link_to "Dane Natoli Cup 2013", root_path
+        %h2 To the victor go the spoils!
+      .header-image
+        = image_tag 'me.png'
   = yield
+  .footer
+    .wrapper
+      %p
+        © 2013 Dane Natoli. All rights reserved.</p>

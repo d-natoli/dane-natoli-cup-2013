@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Anton);
+
+body {
+  font-family:'PT Sans',Helvetica,sans-serif;
+  font-size:16px;
+  margin:0;
+  padding:0;
+  min-width:1000px;
+  background: #222;
+}
+
+h1, h2 {
+  font-family: 'Anton',Helvetica,Arial,sans-serif;
+}
+
+h1 {
+  font-size:80px;
+  margin:0;
+
+  a {
+    color:#FFF;
+    text-decoration:none;
+  }
+}
+
+h2 {
+  font-size:30px;
+  margin:0;
+}
+
+h3 {
+  font-size:30px;
+  margin:0;
+}
+
+.centre {
+  text-align:center;
+}
+
+.wrapper {
+  width:1000px;
+  margin:0 auto;
+}
+
+div.header {
+  color:#FFF;
+  background: -webkit-linear-gradient(left,#021da6 0%,#0329d8 50%,#0433ff 100%);
+  background: -moz-linear-gradient(left,#e0e0e0 0%,#f1f1f1 50%,#e0e0e0 100%);
+  padding: 20px 20px;
+  overflow:auto;
+  text-align:center;
+  text-shadow: 2px 2px #333;
+
+  -moz-box-shadow: 0 0 5px 5px #888;
+  -webkit-box-shadow: 0 0 5px 5px#888;
+  box-shadow: 0 0 5px 5px #888;
+
+  div.header-image,
+  div.heading {
+    float:left;
+  }
+
+  div.heading {
+    padding: 10px 0;
+  }
+
+  img {
+    height:200px;
+  }
+}
+
+div.content {
+  padding:20px 40px 20px;
+  background-color:#fff;
+}
+
+div.grey{
+  background: -webkit-linear-gradient(left,#e0e0e0 0%,#f1f1f1 50%,#e0e0e0 100%);
+  background: -moz-linear-gradient(left,#e0e0e0 0%,#f1f1f1 50%,#e0e0e0 100%);
+}
+
+div.footer {
+  font-family:'PT Sans',Arial,Helvetica,sans-serif;
+  font-size:16px;
+  color: #6e6e6e;
+  text-align:right;
+  padding: 5px 20px;
+}
