@@ -27,29 +27,34 @@
       Upload your jumping photo by April 27th PST. I will then sift through the rot to find the one photo that will be claimed the best jumping photo of all! The winner will be the new owner of the Dane Natoli Cup for a whole year, the losers will be mocked and ridiculed for their pathetic attempts!
 
 .images.content.grey
-  = image_tag 'jump6.jpg'
-  = image_tag 'jump4.jpg'
-  = image_tag 'jump5.jpg'
+  .wrapper
+    = image_tag 'jump6.jpg'
+    = image_tag 'jump4.jpg'
+    = image_tag 'jump5.jpg'
 
 .rules.content
-  .left
-    %h2 Rules
-    %p
-      There are a few rules to this year's competition:
-      %ul
-        %li All photos must be submitted by April 27th PST
-        %li The person submitting the photo must also be in the photo.
-        %li All people in the photo must be jumping!
-        %li Only the person who submits the photo will be awarded the cup, no matter how many people are in the photo
-        %li You may submit up to 3 photos per person
-  .right
-    %h2 Think You Got What It Takes?
-    %p Then upload your photo and prepare to be judge!
-    = form_tag "#" do
-      = text_field_tag 'name', nil, :placeholder => "Name"
-      = text_field_tag 'email', nil, :placeholder => "Email"
-      = file_field_tag 'picture'
-      = link_to "Enter!", "#", :class => "button"
+  .wrapper
+    .left
+      %h2 Rules
+      %p
+        There are a few rules to this year's competition:
+        %ul
+          %li All photos must be submitted by April 27th PST
+          %li The person submitting the photo must also be in the photo.
+          %li All people in the photo must be jumping!
+          %li Only the person who submits the photo will be awarded the cup, no matter how many people are in the photo
+          %li You may submit up to 3 photos per person
+    .right
+      %h2 Think You Got What It Takes?
+      %p Then upload your photo and prepare to be judge!
+      = form_tag "#" do
+        = text_field_tag 'name', nil, :placeholder => "Name"
+        = text_field_tag 'email', nil, :placeholder => "Email"
+        = label_tag :file_info, "No file chosen", :class => "file-info"
+        .file-upload
+          = link_to "Select File", "#", :class => "button"
+          = file_field_tag 'picture'
+        = submit_tag "Enter!", :class => "button"
 .footer
   .wrapper
     %p
