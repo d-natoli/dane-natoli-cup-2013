@@ -57,6 +57,13 @@ input[type="submit"] {
   width: 350px;
   font-size: 32px;
   padding: 19px 0;
+
+  &:disabled {
+    background: -moz-linear-gradient(top,#ccc 0%,#aaa 100%);
+    background: -webkit-linear-gradient(top,#ccc 0%,#aaa 100%);
+    background: -ms-linear-gradient(top,#ccc 0%,#aaa 100%);
+    background: linear-gradient(to bottom,#ccc 0%,#aaa 100%);
+  }
 }
 
 label.file-info {
