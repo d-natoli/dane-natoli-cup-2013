@@ -11,6 +11,7 @@ body {
 
 h1, h2 {
   font-family: 'Anton',Helvetica,Arial,sans-serif;
+  font-weight:normal;
 }
 
 h1 {
@@ -40,13 +41,13 @@ h3 {
 .wrapper {
   width:1000px;
   margin:0 auto;
+  overflow:hidden;
 }
 
 div.header {
   color:#FFF;
   background: -webkit-linear-gradient(left,#021da6 0%,#0329d8 50%,#0433ff 100%);
-  background: -moz-linear-gradient(left,#e0e0e0 0%,#f1f1f1 50%,#e0e0e0 100%);
-  padding: 20px 20px;
+  background: -moz-linear-gradient(left,#021da6 0%,#0329d8 50%,#0433ff 100%);
   overflow:auto;
   text-align:center;
   text-shadow: 2px 2px #333;
@@ -69,8 +70,12 @@ div.header {
   }
 }
 
+body > div {
+  width:100%;
+  padding:25px;
+}
+
 div.content {
-  padding:20px 40px 20px;
   background-color:#fff;
 }
 
@@ -85,4 +90,8 @@ div.footer {
   color: #6e6e6e;
   text-align:right;
   padding: 5px 20px;
+}
+
+div.clearfix {
+  clear:both;
 }
