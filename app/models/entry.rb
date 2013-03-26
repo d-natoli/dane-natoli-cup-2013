@@ -3,10 +3,11 @@ class Entry < ActiveRecord::Base
 
   validates :name, :presence => true
   validates :email, :presence => true
-  validates :picture, :attachment_presence => true
+  validates_attachment :picture, :presence => true,
+                                 :content_type => { :content_type => /image/ }
   validate :uploaded_limit
 
-  has_attached_file :picture
+  has_attached_file :picture, :styles => { :large => "1000>" , :medium => "500>" }
   
   before_validation :titleize_name
 

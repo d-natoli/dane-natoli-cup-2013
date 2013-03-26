@@ -4,4 +4,4 @@
       %h2= "Thanks for your entry #{@entry.name}!"
       %p You are now competing for the Dane Natoli Cup.  Hopefully your photo isn't totally rubbish and you might win!
       %p All photos will be reviewed after the cutoff date, April 27th 2013 PST. We will notify all entrants of the winner by email shortly afterwards!
-    = image_tag @entry.picture.url
+    = image_tag @entry.picture.url(:medium)
