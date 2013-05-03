@@ -12,5 +12,15 @@
 .right
   %h2 Think You Got What It Takes?
   %p Then upload your photo and prepare to be judge!
-  = image_tag "closed.gif", :class => "closed"
+  - if ENV['SUBMISSIONS_OPEN'] == 'true'
+    = form_for @entry, :html => { :multipart => true } do |f|
+      = f.text_field :name, :placeholder => "Name (required)"
+      = f.email_field :email, :placeholder => "Email (required)"
+      = label_tag :file_info, "No file chosen", :class => "file-info"
+      .file-upload
+        = link_to "Select File", "#", :class => "button"
+        = f.file_field :picture
+      = submit_tag "Enter!", :class => "button", :id => "enter"
+  -else
+    = image_tag "closed.gif", :class => "closed"
 .clearfix
