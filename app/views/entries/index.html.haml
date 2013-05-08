@@ -3,5 +3,7 @@
     .wrapper
       %h2= "Entries" if @entries.first == group.first
       - group.each do |entry|
-        %a{ :href => entry.picture.url(:large), :rel => "lightbox[entries]" }
-          = image_tag entry.picture.url(:medium), :class => "entry"
+        %div.entry
+          %h3= entry.name
+          %a{ :href => entry.picture.url(:large), :rel => "lightbox[entries]" }
+            = image_tag entry.picture.url(:medium), :class => "entry"

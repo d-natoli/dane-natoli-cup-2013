@@ -26,6 +26,8 @@ div.rules img.closed {
   width:250px;
 }
 
-body.entries img.entry {
+body.entries div.entry {
   display: inline-block;
+  max-height:370px;
+  vertical-align:top;
 }
