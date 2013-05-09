@@ -44,6 +44,29 @@ h3 {
   overflow:hidden;
 }
 
+nav {
+  ul {
+    list-style:none;
+    margin:0 auto;
+    padding:10px 0;
+    width:400px;
+  }
+
+  li {
+    display:inline-block;
+    margin:0 30px;
+  }
+
+  a {
+    color:#CCC;
+    text-decoration:none;
+
+    &:hover {
+      color:#FFF;
+    }
+  }
+}
+
 div.header {
   color:#FFF;
   background: -webkit-linear-gradient(left,#021da6 0%,#0329d8 50%,#0433ff 100%);
@@ -51,10 +74,6 @@ div.header {
   overflow:auto;
   text-align:center;
   text-shadow: 2px 2px #333;
-
-  -moz-box-shadow: 0 0 5px 5px #888;
-  -webkit-box-shadow: 0 0 5px 5px#888;
-  box-shadow: 0 0 5px 5px #888;
 
   div.header-image,
   div.heading {
