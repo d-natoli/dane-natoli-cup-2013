@@ -1,0 +1,19 @@
+// Place all the styles related to the winner controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.winner div.images {
+  text-align:center;
+
+  div.entry {
+    display: inline-block;
+    max-height:370px;
+    vertical-align:top;
+  }
+
+  div.winner {
+    display: inline-block;
+    max-height:500px;
+    vertical-align:top;
+  }
+}

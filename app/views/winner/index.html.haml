@@ -2,34 +2,38 @@
   .wrapper
     %h2 Dishonourable Mention
     %p This year's dishonourable mention is a tie. The first goes to Ged for uploading such a terrible picture of Tim Dohrmann's tiny erect penis.  The second goes to Foulds for his late-night scotch werewolf photo, which has caused Rach to have night terrors for the last week.
-    %div.entry
-      %a{ :href => @dishonourable_1.picture.url(:large), :rel => "lightbox[entries]" }
-        = image_tag @dishonourable_1.picture.url(:medium), :class => "entry"
-    %div.entry
-      %a{ :href => @dishonourable_2.picture.url(:large), :rel => "lightbox[entries]" }
-        = image_tag @dishonourable_2.picture.url(:medium), :class => "entry"
+    %div.images
+      %div.entry
+        %a{ :href => @dishonourable_1.picture.url(:large), :rel => "lightbox[entries]" }
+          = image_tag @dishonourable_1.picture.url(:medium), :class => "entry"
+      %div.entry
+        %a{ :href => @dishonourable_2.picture.url(:large), :rel => "lightbox[entries]" }
+          = image_tag @dishonourable_2.picture.url(:medium), :class => "entry"
 .content.grey
   .wrapper
     %h2 Third Place
     %p Third place this year goes to a photo that I believe was definitely the most artistic and one of the most creative, and that photo is by Adam Parslow.
-    %div.entry
-      %a{ :href => @third.picture.url(:large), :rel => "lightbox[entries]" }
-        = image_tag @third.picture.url(:medium), :class => "entry"
-.content.grey
+    %div.images
+      %div.entry
+        %a{ :href => @third.picture.url(:large), :rel => "lightbox[entries]" }
+          = image_tag @third.picture.url(:medium), :class => "entry"
+.content
   .wrapper
     %h2 Second Place
     %p This year's second place winner put in a lot of effort to retain the cup, however fell just a bit short.  Never the less, her photo surrounded by so many people on motorbikes made me laugh, especially when I saw some of the bikers faces.  Congrats Ness on a fine entry for this year's Dane Natoli Cup!
-    %div.entry
-      %a{ :href => @second.picture.url(:large), :rel => "lightbox[entries]" }
-        = image_tag @second.picture.url(:medium), :class => "entry"
+    %div.images
+      %div.entry
+        %a{ :href => @second.picture.url(:large), :rel => "lightbox[entries]" }
+          = image_tag @second.picture.url(:medium), :class => "entry"
 .content.grey
   .wrapper
     %h2 And The Winner Is...
     %p Daniel Foulds!!! Did we expect anything less? His photo from what I can only think is Iceland is both huge massive in proportions as well as in the amount of effort it must have taken to get this photo. Truly the jumping photo to end all jumping photos, I couldn't go past awarding him this year's Dane Natoli Cup winner! The cup will be sent out to Foulds to hold for the entire year! Congratulations Fodders!!!
-    %div.entry
-      %a{ :href => @first.picture.url(:large), :rel => "lightbox[entries]" }
-        = image_tag @first.picture.url(:medium), :class => "entry"
+    %div.images
+      %div.winner
+        %a{ :href => @first.picture.url(:large), :rel => "lightbox[entries]" }
+          = image_tag @first.picture.url(:medium), :class => "entry"
 .content
   .wrapper
-    %h2 Fin
+    %h2 Until Next Year!
     %p And so that is it for this year kids. Thanks for being a part of the Dane Natoli Cup 2013 and here's hoping to see you next year for another great event!
