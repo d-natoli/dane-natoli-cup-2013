@@ -1,6 +1,4 @@
 class Entry < ActiveRecord::Base
-  attr_accessible :name, :email, :picture
-
   validates :name, :presence => true
   validates :email, :presence => true
   validates_attachment :picture, :presence => true,
@@ -8,7 +6,7 @@ class Entry < ActiveRecord::Base
   validate :uploaded_limit, :on => :create
 
   has_attached_file :picture, :styles => { :large => "800x600>" , :medium => "500>" }
-  
+
   before_validation :titleize_name
 
   private
@@ -20,4 +18,5 @@ class Entry < ActiveRecord::Base
   def titleize_name
     self.name = self.name.titleize
   end
+
 end

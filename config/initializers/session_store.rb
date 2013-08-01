@@ -1,8 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-DaneNatoliCup2013::Application.config.session_store :cookie_store, key: '_dane-natoli-cup-2013_session'
-
-# Use the database for sessions instead of the cookie-based default,
-# which shouldn't be used to store highly confidential information
-# (create the session table with "rails generate session_migration")
-# DaneNatoliCup2013::Application.config.session_store :active_record_store
+DaneNatoliCup2013::Application.config.session_store :cookie_store, key: '_dane_natoli_cup2013_session'
