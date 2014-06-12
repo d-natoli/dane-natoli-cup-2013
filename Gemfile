@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
+ruby "2.1.2"
 
-gem 'rails', '4.0.0'
+gem 'rails', '~> 4.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -20,7 +20,7 @@ gem 'haml-rails'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'debugger'
+  gem 'byebug'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'mysql2'
